@@ -1,0 +1,187 @@
+/* Basic Setting */
+body {
+    margin : 0;
+    padding : 0;
+} 
+
+a {
+    text-decoration: none;      /* a링크 밑줄 제거 */
+}
+
+p {
+    color : white;
+}
+
+li, ul{
+    list-style: none;
+}
+
+/* Top-Menu */
+#top {
+    width : 100%;
+    height : 80px;
+    background-color: #0090dd;
+    position : fixed;
+}
+
+#top #logo {
+    width : 15%;
+    height : 40px;
+    float : left;
+}
+
+#logo {
+    padding : 20px;
+    font-size: 15px;
+    text-align : center;
+}
+
+#top #menu {
+    width : 200px;
+    height : 80px;
+    float : right;
+    left : 0;
+    position: relative;
+    margin-right : 20px;
+}
+
+#menu ul {
+    height: 100%;
+    margin: 0;
+    padding : 0;
+    position : absolute;
+    color: white;
+}
+
+#menu .menu-bar {
+    padding : 0 5px;
+    display : inline-block;
+    border: 3px solid block;
+    line-height: 80px;
+}
+
+#menu .menu-bar p {
+    font-size : 22px;
+    margin : 0;
+}
+
+#menu .menu-bar:hover .content-dropdown {
+    height : 100px;
+}
+
+#menu .menu-bar .content-dropdown {
+    width: 50%;
+    height: 0;
+    overflow : hidden;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transition: height 0.5s ease;
+}
+
+#menu .menu-bar .content-dropdown li {
+    padding : 5px 0;
+    border : solid 1px black;
+    text-align: center;
+    background-color: white;
+}
+
+.content-dropdown li {
+    line-height: 20px;
+}
+
+/* Side-bar */
+.sidebar {
+    width : 120px;
+    height: 100%;
+    margin-top : 80px;
+    padding-bottom : 80px;
+    position : fixed;
+    top : 0;
+    bottom : 0;
+    z-index : 10;
+    background : rgb(110, 110, 110);
+}
+
+.sidebar .sidebar-content {
+    width : 100%;
+    height : auto;
+}
+
+.sidebar .sidebar-content ul {
+    margin : 0;
+    padding : 0;
+}
+
+.sidebar .sidebar-content button {
+    border : none;
+    background-color: rgb(110, 110, 110);
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.sidebar-image {
+    min-width : 100px;
+    max-width : 100px;
+    min-height : 100px;
+    max-height : 100px;
+    width : auto;
+    height: auto;
+    padding : 10px 10px;
+    border-bottom : 2px solid gray;
+}
+
+.sidebar-content button .sidebar-image {
+    text-align: center;
+    padding : 5px;
+}
+
+/* Main-Content */
+.main {
+    width : 100%;
+    min-height: 500px;
+    height : auto;
+    background: #e7e7e7;
+}
+
+.main .main-content {
+    width : 100%;
+    height: 100%;
+    padding-left : 35px;
+    padding-right: 35px;
+    padding-top : 35px;
+    background : rgba(233, 233, 233, 0.959);
+    z-index : 1;
+}
+
+.main .main-content .row {
+    margin : 100px 50px 50px 80px;
+    text-align : center;
+}
+
+.main .main-content .next-row-button {
+    float : right;
+    margin-top : 300px;
+    padding : 0;
+}
+
+.next-row-button {
+    top : 200px;
+}
+
+/* Footer */
+.footer {
+    width : 100%;
+    height : 30px;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.footer #footer-word {
+    width : 100%;
+    height : 100%;
+    text-align : center;
+}
+
+.footer #footer-word a{
+    color : white;
+}
