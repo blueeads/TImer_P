@@ -7,18 +7,13 @@
                  </button>
             </li>
             <li>
-                <button type = "button" onclick = "location.href = '/Timer/Alram.php'">
-                    <img class = "sidebar-image" src="./Image/Alram.png" alt="Alram">
+                <button type = "button" onclick = "location.href = '/Timer/stopWatch.php'">
+                    <img class = "sidebar-image" src="./Image/stopwatch.png" alt="StopWatch">
                 </button>
             </li>
             <li>
-                <button type = "button" onclick = "location.href = '/Timer/StopWatch.php'">
-                    <img class = "sidebar-image" src="./Image/stopwatch.png" alt="StopWatch">   
-                </button>
-            </li>
-            <li>
-                <button type = "button" onclick = "location.href = '/Timer/Timer.php'">
-                    <img class = "sidebar-image" src="./Image/Timer.png" alt="Timer">   
+                <button type = "button" onclick = "location.href = '/Timer/timer.php'">
+                    <img class = "sidebar-image" src="./Image/Timer.png" alt="Timer">  
                 </button>
             </li>
         </ul>

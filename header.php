@@ -12,14 +12,14 @@
         <div id = "logo"> <a href="/Timer/">Logo</a> </div>
         <div id = "menu">
             <ul>
-                <li class = "menu-bar"> <p>Content</p> 
+                <li class = "menu-bar"> <p class = "menu-bar-p">Content</p> 
                     <ul class = "content-dropdown">
-                    <li><a href="">Timer</a></li>
-                        <li><a href="" text-decoration : none;>Stopwatch</a></li>
-                        <li><a href="">WorldTime</a></li>
+                    <li><a href="/Timer/" text-decoration : none;>Timer</a></li>
+                        <li><a href="/Timer/stopwatch.php" text-decoration : none;>Stopwatch</a></li>
+                        <li><a href="/Timer/timer.php" text-decoration : none;>WorldTime</a></li>
                     </ul>
                 </li>
-                <li class = "menu-bar"><a href="http://"><p>Setting</p></a></li>
+                <li class = "menu-bar"><a href="/"><p>Setting</p></a></li>
             </ul>
         </div>
     </div>

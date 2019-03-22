@@ -6,12 +6,10 @@ require __DIR__ . '/left-sidebar.php';
 <div class = "main">
     <div class = "main-content">
         <div class = "row">
-            <iframe width="1280px" height="720px" 
+            <iframe width="1200px" height="600px" 
             src="https://vclock.kr/embed/time/#theme=0&ampm=1&showdate=1" 
             frameborder="0" allowfullscreen>
             </iframe>
-            <div class = "next-row-button">
-                <button type = "button">=></button>
             </div>
         </div>
     </div>
