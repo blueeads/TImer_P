@@ -1,18 +1,12 @@
-<?php
-require  __DIR__ . '/header.php';
-require   __DIR__ . '/left-sidebar.php';
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
 
-<div class = "main">
-    <div class = "main-content">
-        <div class = "row">
-            <iframe width="1200px" height="600px"
-            src="https://vclock.kr/embed/timer/#theme=0&ampm=1&sound=xylophone" frameborder="0" allowfullscreen>
-            </iframe>
-        </div>
-    </div>
-</div>
-
-<?php
-require __DIR__ . '/footer.php';
-?>
+</body>
+</html>
