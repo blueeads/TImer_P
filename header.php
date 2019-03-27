@@ -7,7 +7,7 @@
     <title>Timer</title>
     <link rel="stylesheet" href="common.css">
 </head>
-<body>
+<body onload="showClock()">
     <div id = "top">
         <div id = "logo"> <a href="/Timer/">Logo</a> </div>
         <div id = "menu">

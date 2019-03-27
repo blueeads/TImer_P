@@ -6,10 +6,11 @@ require __DIR__ . '/left-sidebar.php';
 <div class = "main">
     <div class = "main-content">
         <div class = "row">
-            <iframe width="1200px" height="600px" 
+            <!-- <iframe width="1200px" height="600px" 
             src="https://vclock.kr/embed/time/#theme=0&ampm=1&showdate=1" 
             frameborder="0" allowfullscreen>
-            </iframe>
+            </iframe> -->
+            <div id="divClock" class="clock"></div>
             </div>
         </div>
     </div>
