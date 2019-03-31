@@ -12,9 +12,27 @@ p {
     color : white;
 }
 
-li, ul{
-    list-style: none;
+ul{
+    list-style:none;
+    margin:0;
+    padding:0;
 }
+
+li {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border : 0;
+    display: inline-block;
+}
+
+/* @font-face {
+    font-family: "DS-Digital";
+    src : url(./ds_digital/DS-DIGII.TTF);
+}
+
+#number {
+    font-family: "DS-Digital";
+} */
 
 /* Top-Menu */
 #top {
