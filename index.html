@@ -9,16 +9,22 @@
          */       
       });
 </script>   
+
 <div class = "header"></div>
 <div class = "left-slide"></div>
 
 <div class = "main">
     <div class = "main-content">
         <div class = "row">
-            <div id="divClock" class="clock"></div>
+            <div id="divClock" class="clock"><p>dadasdad</p></div>
         </div>
 
     </div>
 </div>
 
 <div class = "footer"></div>
+
+<script>
+    var d = new Date();
+    document.getElementById("divClock").innerHTML = d;
+</script>

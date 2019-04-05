@@ -4,6 +4,11 @@ body {
     padding : 0;
 } 
 
+html {
+    width : 100%;
+    height : 100%;
+}
+
 a {
     text-decoration: none;      /* a링크 밑줄 제거 */
 }
@@ -183,7 +188,7 @@ li {
 }
 
 .main .main-content .row {
-    margin : 100px 50px 50px 80px;
+    margin: 100px 50px 50px 80px;
     text-align : center;
 }
 
