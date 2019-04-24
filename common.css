@@ -198,6 +198,21 @@ li {
     padding : 0;
 }
 
+.clock {
+    border:1px solid #dedede; 
+    width:calc(100% - 30%); 
+    margin : 10% auto;
+    height:600px;
+    color:#666;
+    font-size:150px;
+    background: white;
+    max-height : 600px;
+}
+
+/* .row .clock {
+    text-align : center;
+} */
+
 .next-row-button {
     top : 200px;
 }

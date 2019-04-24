@@ -35,7 +35,7 @@
     }
 
     .button:hover {
-        color: white;
+        color: black;
     }
 
     .stopwatch {
@@ -45,6 +45,7 @@
         width: 1000px;
         margin-left: 15%;
         background : white;
+        color:#666;
     }
 
     .results {
@@ -90,14 +91,13 @@
             <nav class="controls">
                 <ul>
                     <li id="start-btn"><a href="#" class="button" id="start-font" onClick="stopwatch.start();">Start</a> </li>
-                    <li id="lap-btn"><a href="#" class="button" id="lap-font" onClick="stopwatch.lap();">Lap</a></li>
                     <li id="stop-btn"><a href="#" class="button" id="stop-font" onClick="stopwatch.stop();">Stop</a></li>
                     <li id="restart-btn"><a href="#" class="button" id="restart-font" onClick="stopwatch.restart();">Restart</a></li>
-                    <li id="clear-btn"><a href="#" class="button" id="clear-font" onClick="stopwatch.clear();">Clear Laps</a></li>
                 </ul>
             </nav>
             <div class="stopwatch" id="number"></div>
             <ul class="results"></ul>
+            </div>
         </div>
     </div>
 </div>
@@ -110,7 +110,6 @@
             this.running = false;
             this.display = display;
             this.results = results;
-            this.laps = [];
             this.reset();
             this.print(this.times);
         }
@@ -127,13 +126,6 @@
             }
         }
 
-        lap() {
-            let times = this.times;
-            let li = document.createElement('li');
-            li.innerText = this.format(times);
-            this.results.appendChild(li);
-        }
-
         stop() {
             this.running = false;
             this.time = null;
@@ -146,10 +138,6 @@
                 requestAnimationFrame(this.step.bind(this));
             }
             this.reset();
-        }
-
-        clear() {
-            clearChildren(this.results);
         }
 
         step(timestamp) {
@@ -193,11 +181,6 @@
         for (; result.length < count; --count)
             result = '0' + result;
         return result;
-    }
-
-    function clearChildren(node) {
-        while (node.lastChild)
-            node.removeChild(node.lastChild);
     }
 
     let stopwatch = new Stopwatch(
